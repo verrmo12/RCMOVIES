@@ -71,18 +71,15 @@ function Card(movie: CardProps) {
       >
         <div className="">
           <div className={`drop-shadow-xl w-full h-[11rem] lg:h-[19rem]`}>
-            <img
-              src={
-                movie.poster_path
-                  ? `https://image.tmdb.org/t/p/w342/${movie.poster_path}`
-                  : movie.profile_path
+            <Image
+              src={movie.poster_path
+                ? `https://image.tmdb.org/t/p/w342/${movie.poster_path}`
+                : movie.profile_path
                   ? `https://image.tmdb.org/t/p/w500/${movie.profile_path}`
-                  : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png"
-              }
+                  : "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/330px-No-Image-Placeholder.svg.png"}
               layout="fill"
               objectFit="cover"
-              unoptimized={true}
-            />
+              unoptimized={true} alt={""}            />
           </div>
         </div>
       </div>
