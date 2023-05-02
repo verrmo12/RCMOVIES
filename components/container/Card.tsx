@@ -71,7 +71,7 @@ function Card(movie: CardProps) {
       >
         <div className="">
           <div className={`drop-shadow-xl w-full h-[11rem] lg:h-[19rem]`}>
-            <Image
+            <img
               src={
                 movie.poster_path
                   ? `https://image.tmdb.org/t/p/w342/${movie.poster_path}`
