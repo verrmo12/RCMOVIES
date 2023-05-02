@@ -49,7 +49,7 @@ function SimilarCard(movie:SimilarCardProps) {
             <div
             className={`drop-shadow-xl w-full h-[11rem] lg:h-[19rem]`}
           >
-            <Image
+            <img
               src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`}
               layout="fill"
               objectFit="cover"
