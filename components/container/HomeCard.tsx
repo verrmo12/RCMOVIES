@@ -109,7 +109,7 @@ function HomeCard(movie: CardProps) {
               className={`drop-shadow-xl w-[142px] md:w-full
              h-[12.3rem]  md:h-[320px]`}
             >
-              <img
+              <Image alt=""
                 src={
                   movie.poster_path
                     ? `https://image.tmdb.org/t/p/w342/${movie.poster_path}`

@@ -20,7 +20,8 @@ function Genre() {
     return () => {
       gen
     }
-  },[type,slug])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[type,slug]);
 
   const fetchGenres = async () => {
     let url = `https://api.themoviedb.org/3/discover/${slug && slug[0].includes("&") ? "tv" : type}?page=${slug && slug[1]}&api_key=cfe422613b250f702980a3bbf9e90716&with_genres=${slug && slug[0].split("-")[1]}`

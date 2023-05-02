@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router'
 import React, { useEffect, useState } from 'react'
-
+import Image from 'next/image'
 
 interface WatchingProps {
     iframe : string,
@@ -33,7 +33,7 @@ function Watching(data : WatchingProps) {
     <div className="flex p-2">
     <div>
 
-    <img src={data.image} />
+    <Image alt='#' src={data.image} />
     
     </div>
     <div className="p-2">

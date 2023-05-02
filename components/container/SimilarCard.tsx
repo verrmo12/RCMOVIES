@@ -2,6 +2,7 @@ import Image from 'next/image';
 import React,{useState,useEffect} from 'react'
 import CardModal from './CardModal';
 
+
 interface SimilarCardProps {
     title: string;
     backdrop_path: string;
@@ -49,7 +50,7 @@ function SimilarCard(movie:SimilarCardProps) {
             <div
             className={`drop-shadow-xl w-full h-[11rem] lg:h-[19rem]`}
           >
-            <img
+            <Image alt='#'
               src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`}
               layout="fill"
               objectFit="cover"

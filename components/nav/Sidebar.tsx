@@ -17,7 +17,7 @@ import { MdBookmark } from "react-icons/md";
 import Search from "./Search";
 import { FaBars } from "react-icons/fa";
 import GenreMenu from "./GenreMenu";
-
+import Image from 'next/image'
 
 const TOP_OFFSET = 66;
 
@@ -91,7 +91,7 @@ const handleMovieCategory = (e:any) => {
             transition 
             duration-500 
             `}>
-        <img className="h-4 lg:h-7" src="/play.png" alt="Logo" />
+        <Image className="h-4 w-5 lg:h-7" src="/play.png" alt="Logo" />
         <span>*</span>
         <Link href={`/`}>
           <span className="hidden md:block text-white font-bold text-2xl cursor-pointer">
